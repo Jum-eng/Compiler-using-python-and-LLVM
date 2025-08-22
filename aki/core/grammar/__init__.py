@@ -705,7 +705,7 @@ with open("core/grammar/grammar.lark") as file:
 AkiParser = Lark(
     grammar,
     transformer=AkiTransformer(),
-    parser="lalr",
+     parser="earley",
     debug=False,
     ambiguity="explicit",
 )
